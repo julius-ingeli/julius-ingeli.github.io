@@ -4,6 +4,23 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+function displayAge(){
+  var currentDate = new Date();
+  var birthDate = new Date('2000-12-30');
+  var age = currentDate.getFullYear() - birthDate.getFullYear();
+  if (
+    currentDate.getMonth() < birthDate.getMonth() ||
+    (currentDate.getMonth() === birthDate.getMonth() &&
+      currentDate.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  document.getElementById('age').textContent = age;
+}
+
+
 (function() {
   "use strict";
 

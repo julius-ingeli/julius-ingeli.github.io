@@ -60,11 +60,8 @@
       <h1>Julius Ingeli </h1>
       <p>I'm a <span class="typed" data-typed-items="Programmer, Data Analyst, "></span></p>
       <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-github"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/julius-ingeli" class="google-plus"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/j%C3%BAlius-ingeli-8218951ba/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -92,6 +89,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
+                  <script>window.onload = function(){displayAge();};</script>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>30 December 2000</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.julius-ingeli.github.io</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+45 50 18 95 40</span></li>
@@ -100,7 +98,7 @@
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Academy Profession Degree</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>julius.ingeli@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Job:</strong> <span>Available</span></li>
@@ -181,7 +179,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">C++ <i class="val">55%</i></span>
+              <span class="skill">C/C++ <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -244,7 +242,7 @@
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>Intern Trainee</h4>
-              <h5>2022 - Present</h5>
+              <h5>2022 - 2023</h5>
               <p><em>Integrify, Helsinki, Finland </em></p>
               <ul>
                 <li>Intern for Company Integrify focused on Data Science and Machine Learning</li>
@@ -256,7 +254,7 @@
             </div>
             <div class="resume-item">
               <h4>Kitchen staff</h4>
-              <h5>2021 - present</h5>
+              <h5>2021 - 2022</h5>
               <p><em>Jensens Bøfhus, Odense, Denmark</em></p>
               <ul>
                 <li>Working as a kitchen staff member.</li>
@@ -281,16 +279,7 @@
           <p>The following section shows off couple of projects I have worked on, or those that I have been a part of.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
+
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
@@ -298,30 +287,29 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
+                <h4>Simple HTML Calculator</h4>
                 <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/html/portfolio-details-1.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
+          
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Battleships </h4>
+                <p>Game</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  
+                  <a href="assets/html/portfolio-details-2.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
+          <!--
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
@@ -419,7 +407,7 @@
               </div>
             </div>
           </div>
-
+        -->
         </div>
 
       </div>
@@ -430,7 +418,7 @@
   <footer id="footer">
     <div class="container">
       <h3>Julius Ingeli</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
