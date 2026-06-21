@@ -265,4 +265,26 @@
     })
   });
 
+  /**
+   * Live age updater using the birthday.
+   */
+  const updateAge = () => {
+    const ageEl = select('#age')
+    if (!ageEl) return
+
+    const birthDate = new Date(2000, 11, 30) // month is 0-indexed: December = 11
+    const today = new Date()
+    let age = today.getFullYear() - birthDate.getFullYear()
+    const monthDiff = today.getMonth() - birthDate.getMonth()
+    const dayDiff = today.getDate() - birthDate.getDate()
+
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+      age--
+    }
+
+    ageEl.textContent = age
+  }
+
+  updateAge()
+
 })()
